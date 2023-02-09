@@ -72,15 +72,6 @@ header {
   border: none;
 }
 
-.hero-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-image: url('images/hero-bg.avif');
-  min-height: 800px;
-  width: 100%;
-}
-
 /* hero section */
 .hero-section {
   padding: 24px;
