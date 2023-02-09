@@ -80,3 +80,32 @@ header {
   min-height: 800px;
   width: 100%;
 }
+
+/* hero section */
+.hero-section {
+  padding: 24px;
+  min-height: 640px;
+  background-image: url("images/hero-bg.avif");
+  text-align: center;
+}
+
+.hero-logo {
+  width: 400px;
+}
+
+.hero-title {
+  font-size: 72px;
+  margin-top: 24px;
+}
+
+.hero-description {
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+.hero-btn {
+  border-radius: 36px;
+  padding: 22px 96px;
+  font-size: 12px;
+  margin-top: 32px;
+}
