@@ -93,6 +93,8 @@ header {
       rgba(0, 0, 0, 0.7)
     ),
     url('images/hero-bg.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
 }
 
@@ -100,20 +102,21 @@ header {
   width: 400px;
 }
 
-.hero-title {
-  font-size: 72px;
+.hero-title, .creatures-title {
+  font-size: 64px;
   margin-top: 24px;
 }
 
-.hero-description {
-  font-size: 18px;
+.hero-description, .creatures-description {
+  font-size: 16px;
   margin-top: 18px;
 }
 
-.hero-btn {
+.hero-btn, .creatures-btn {
   border-radius: 36px;
-  padding: 22px 96px;
+  padding: 14px 96px;
   font-size: 12px;
+  font-weight: 600;
   margin-top: 32px;
 }
 
@@ -165,4 +168,23 @@ header {
 .carousel-section .bottom-container {
   align-items: center;
   padding: 0 24px;
+}
+
+/* creatures section */
+.creatures-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 480px;
+  background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(0, 0, 0, 0.5)
+    ), url('images/creatures.webp');
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+
+.creatures-section .block {
+  width: 40%;
 }
