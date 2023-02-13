@@ -136,7 +136,6 @@ header {
 
 .carousel-card {
   width: 360px;
-  border: 1px solid black;
 }
 
 .carousel-body {
@@ -184,7 +183,8 @@ header {
   background-size: 65%;
 }
 
-.creatures-title, .wizard-hut-title {
+.creatures-title,
+.wizard-hut-title {
   font-size: 58px;
   line-height: 1.1;
 }
@@ -209,4 +209,37 @@ header {
 
 .wizard-hut-section .block {
   text-align: right;
+}
+
+/* latest news section */
+.latest-news-section {
+  margin-top: 56px;
+}
+
+.latest-news-section h2 {
+  font-size: 48px;
+  margin-left: 32px;
+}
+.latest-news-section .card-container {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.news-card {
+  width: 340px;
+  position: relative;
+  z-index: 3;
+  padding-bottom: 76px;
+  border: 1px solid #ccc;
+}
+
+.news-image {
+  transform: scale(1.1);
+}
+
+.news-description {
+  font-weight: 500;
+  padding: 0 36px;
+  transform: translateY(-48px);
 }
