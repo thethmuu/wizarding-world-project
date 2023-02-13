@@ -102,17 +102,21 @@ header {
   width: 400px;
 }
 
-.hero-title, .creatures-title {
+.hero-title {
   font-size: 64px;
   margin-top: 24px;
 }
 
-.hero-description, .creatures-description {
+.hero-description,
+.creatures-description,
+.wizard-hut-description {
   font-size: 16px;
   margin-top: 18px;
 }
 
-.hero-btn, .creatures-btn {
+.hero-btn,
+.creatures-btn,
+.wizard-hut-btn {
   border-radius: 36px;
   padding: 14px 96px;
   font-size: 12px;
@@ -171,20 +175,38 @@ header {
 }
 
 /* creatures section */
-.creatures-section .container {
+.creatures-section .container,
+.wizard-hut-section .container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  min-height: 480px;
-  background-image: linear-gradient(
-      to right,
-      transparent,
-      rgba(0, 0, 0, 0.5)
-    ), url('images/creatures.webp');
+  min-height: 500px;
   background-repeat: no-repeat;
   background-size: 65%;
 }
 
-.creatures-section .block {
+.creatures-title, .wizard-hut-title {
+  font-size: 58px;
+  line-height: 1.1;
+}
+
+.creatures-section .container {
+  justify-content: flex-end;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5)),
+    url('images/creatures.webp');
+}
+
+.wizard-hut-section .container {
+  justify-content: flex-start;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5)),
+    url('images/wizard-hut.webp');
+  background-position: top right;
+}
+
+.creatures-section .block,
+.wizard-hut-section .block {
   width: 40%;
+}
+
+.wizard-hut-section .block {
+  text-align: right;
 }
