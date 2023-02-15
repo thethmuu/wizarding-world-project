@@ -74,6 +74,10 @@ header {
   text-decoration: none;
 }
 
+.navbar .nav-item a:hover {
+  color: #ccc;
+}
+
 .btn {
   background-color: #6b63b5;
   color: inherit;
@@ -115,14 +119,17 @@ header {
   margin-top: 18px;
 }
 
-.hero-btn,
-.creatures-btn,
-.wizard-hut-btn {
+.btn-secondary {
   border-radius: 36px;
   padding: 14px 96px;
   font-size: 12px;
   font-weight: 600;
   margin-top: 32px;
+}
+
+/* pseudo class */
+.btn:hover {
+  background-color: #4b4581;
 }
 
 /* carousel section */
@@ -248,6 +255,7 @@ header {
 /* footer */
 footer {
   margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 footer .container {
@@ -285,7 +293,7 @@ footer hr {
   font-size: 14px;
   font-weight: 500;
   margin-bottom: 16px;
-  color: #585C66;
+  color: #585c66;
 }
 
 .bottom-footer .social-icons {
